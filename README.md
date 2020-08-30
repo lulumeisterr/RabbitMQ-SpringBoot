@@ -23,3 +23,15 @@ Painel do RabbitMQ
 
 - Ao Executar o Projeto as filas sao criadas automaticamente
 - Criacao do Exchange do tipo Direct que recebe a mensagem enviada pelo Produtor e encaminha a mensagem para a fila destinada do produtor.
+
+
+# Mensagerias ajudam em :
+
+ - Problema de comunicacao de servicos causando timeout
+ 
+ - Distribuicao de requisicoes , vamos supor que um servidor nao esteja aguentando o excesso de requisicao entao a mensageria
+    tem o papel de processar as informacoes de acordo com a capacidade de processamento do servidor. Se o servidor cair nos podemos utilizar um conceito chamado
+    DeadLetters para jogar as mensagens para essa fila para que quando o sistema volte ele comece a pegar essas informacoes que nao foram requisitadas atraves da       fila deadLetter.
+ 
+ - Diminui o acoplamento de informacoes.
+
