@@ -1,8 +1,5 @@
 # RabbitMQ-SpringBoot
 
-
-# Descricao
-
 Desenvolva uma solução para o agronegócio que coleta dados via sensores de temperatura
 e umidade. Esses sensores ficarão instalados em um drone com uma altíssima autonomia
 de energia.
