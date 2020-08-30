@@ -12,7 +12,7 @@ funcionalidade resulta na localização do equipamento em um map.
 
 # Imagem RabbitMQ
 
-Docker
+Instale a imagem do RabbitMQ com docker
   - docker run -d -p 15672:15672 -p 5672:5672 --name rabbitmq rabbitmq:3-management
  
 Painel do RabbitMQ
