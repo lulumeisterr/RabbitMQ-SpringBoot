@@ -18,6 +18,8 @@ Instale a imagem do RabbitMQ com docker
 Painel do RabbitMQ
   - http://localhost:15672/#/
   
+  - User e senha : guest
+  
   
 # Exchange Direct 
 
