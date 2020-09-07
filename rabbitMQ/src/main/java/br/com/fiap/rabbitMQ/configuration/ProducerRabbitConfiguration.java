@@ -27,7 +27,7 @@ public class ProducerRabbitConfiguration {
 	@Value("${spring.rabbitmq.template.routing-key}")
 	private String queue;
 
-	@Value("${projeto.mba.fiap}")
+	@Value("${spring.rabbitmq.template.exchange}")
 	private String exchange;
 
 	@Value("${deadletter.producer}")
