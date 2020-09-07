@@ -18,13 +18,20 @@ Instale a imagem do RabbitMQ com docker
 Painel do RabbitMQ
   - http://localhost:15672/#/
   
-  - User e senha : guest
-  
-  
-# Exchange Direct 
+  - user e password : guest
+ 
+# Usando o Exchange Direct 
 
 - Ao Executar o Projeto as filas sao criadas automaticamente
 - Criacao do Exchange do tipo Direct que recebe a mensagem enviada pelo Produtor e encaminha a mensagem para a fila destinada do produtor.
+
+# EndPoint para publicar na fila
+
+- localhost:8001/send
+- Body / Method Post
+  {
+	  "text":"Teste Agora , 123 , opa"
+  }
 
 
 # Mensagerias ajudam em :
