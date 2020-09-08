@@ -10,8 +10,8 @@ Painel do RabbitMQ
  
 # Usando o Exchange Direct 
 
-- Ao Executar o Projeto as filas sao criadas automaticamente
-- Criacao do Exchange do tipo Direct que recebe a mensagem enviada pelo Produtor e encaminha a mensagem para a fila destinada do produtor.
+- Ao Executar o projeto as filas sao criadas automaticamente
+- Criacao do exchange do tipo direct que recebe a mensagem enviada pelo produtor e encaminha a mensagem para a fila destinada do produtor.
 
 # EndPoint para publicar na fila
 
