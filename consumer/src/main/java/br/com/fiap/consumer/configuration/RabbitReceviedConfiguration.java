@@ -21,6 +21,7 @@ public class RabbitReceviedConfiguration {
 		return new Jackson2JsonMessageConverter();
 	}
 
+	@Bean
 	public SimpleRabbitListenerContainerFactory SimpleRabbitListenerContainerFactory
 	(org.springframework.amqp.rabbit.connection.ConnectionFactory connectionFactory,SimpleRabbitListenerContainerFactoryConfigurer configure) {
 

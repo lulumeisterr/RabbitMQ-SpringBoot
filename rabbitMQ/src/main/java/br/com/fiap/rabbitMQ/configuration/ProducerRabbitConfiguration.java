@@ -74,7 +74,7 @@ public class ProducerRabbitConfiguration {
 	Queue queue() {
 		Map<String,Object> args = new HashMap<>();
 		args.put("x-dead-letter-exchange", exchange);
-		args.put("x-dead-letter-routing-key", queue);
+		args.put("x-dead-letter-routing-key", deadletter);
 		return new Queue(queue,true,false,false,args);
 	}
 	
@@ -83,9 +83,13 @@ public class ProducerRabbitConfiguration {
 		return BindingBuilder.bind(queue()).to(exchange()).with(queue);
 	}
 	
+	/**
+	 * Atrela a deadLetter a fila
+	 * @return
+	 */
 	@Bean
 	public Binding bindingQueueDeadLetter() {
-		return BindingBuilder.bind(queue()).to(exchange()).with(deadletter);
+		return BindingBuilder.bind(deadLetter()).to(exchange()).with(deadletter);
 	}
 	
 	

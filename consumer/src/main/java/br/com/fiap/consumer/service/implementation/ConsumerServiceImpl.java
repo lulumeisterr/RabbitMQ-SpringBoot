@@ -9,7 +9,7 @@ import br.com.fiap.consumer.service.ConsumerService;
 public class ConsumerServiceImpl implements ConsumerService{
 
 	@Override
-	public void action(Message message) {
+	public void action(Message message) throws Exception {
 		System.out.println(message.getText());
 	}
 
