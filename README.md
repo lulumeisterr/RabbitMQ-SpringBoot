@@ -1,8 +1,10 @@
 # Imagem RabbitMQ
 
 Instale a imagem do RabbitMQ com docker
+
   - docker run -d -p 15672:15672 -p 5672:5672 --name rabbitmq rabbitmq:3-management
- 
+  - docker exec -it rabbitmq bash
+  
 Painel do RabbitMQ
   - http://localhost:15672/#/
   
