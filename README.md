@@ -25,6 +25,10 @@ Painel do RabbitMQ
   }
 
 
+# Melhorias :
+
+- Construir Exchange Fanout , Topic , headers
+
 # Mensagerias ajudam em :
 
  - Problema de comunicacao de servicos causando timeout
